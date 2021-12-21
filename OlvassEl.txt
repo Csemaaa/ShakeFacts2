@@ -1,0 +1,9 @@
+Az alkalmazás a keresőmezőbe  beírt szóról próbál információkat keresni az interneten.
+Ha a telefont megrázzuk, a telefon felkeresi a wikipédia json-os oldalát a szónak, majd a tartalom alatt található sztringet mondatokra darabolja.
+A keresőmező alatti TextViewban megjelenik a mondat egy "fact" az adott szóról.
+Újabb rázáskor - ha a wikipédia oldal nem egy mondatból áll - egy újabb mondatot ír ki a képernyőre az applikáció.
+
+Az alkamazás fejlesztésekor a json fájl olvasásánál több problémába is ütköztem, ami Linuxon működött, az az Android Studio-s környezetben nem.
+Így A JsonObjct és JsonArray osztályok használata helyett az url-ből visszakapott sztringet nem tudtam szabályosan feldarabolni, ezért előfordul, hogy akár nem elgépelt szó esetén az alkamazás kidob minket.
+Az alkalmazásban a perzisztencia még nincsen teljesen készen, ugyanis az adatbázis létrehozásakkor a fordító problámákba ütközik, így az előzmények fül egyelőre nem jelenít meg semmit, valószínűleg a határidő lejáratakor sem fog működni ez a funkció
+ 
